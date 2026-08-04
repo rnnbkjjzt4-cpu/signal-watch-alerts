@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal Watch — Large Loss Alerts</title>
+<style>
+  body { font-family: -apple-system, sans-serif; background: #0d0f12; color: #eee; margin: 0; padding: 16px; }
+  h1 { color: #C8102E; font-size: 20px; }
+  .card { background: #1a1d22; border-left: 4px solid #C8102E; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+  .hazard { text-transform: uppercase; font-size: 11px; color: #ff8a8a; font-weight: bold; }
+  .title { font-size: 15px; margin: 4px 0; }
+  .meta { font-size: 12px; color: #888; }
+  a { color: #6cb4ff; }
+  #empty { color: #888; text-align: center; margin-top: 40px; }
+</style>
+</head>
+<body>
+<h1>🚨 Signal Watch — Large Loss Alerts</h1>
+<div id="list"></div>
+<div id="empty" style="display:none">No alerts yet. Check back soon.</div>
+
+<script>
+async function load() {
+  const url = 'https://raw.githubusercontent.com/rnnbkjjzt4-cpu/signal-watch-alerts/main/state/alerts-log.json?t=' + Date.now();
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    const list = document.getElementById('list');
+    list.innerHTML = '';
+    if (!data.length) { document.getElementById('empty').style.display = 'block'; return; }
+    data.forEach(e => {
+      const div = document.createElement('div');
+      div.className = 'card';
+      div.innerHTML = `
+        <div class="hazard">${e.hazard} · ${e.source}</div>
+        <div class="title">${e.title || e.headline || 'Untitled'}</div>
+        <div class="meta">${e.area || ''} — ${new Date(e.timestamp).toLocaleString()}</div>
+        ${e.link ? `<a href="${e.link}" target="_blank">View source →</a>` : ''}
+      `;
+      list.appendChild(div);
+    });
+  } catch (err) {
+    document.getElementById('list').innerHTML = 'Error loading alerts: ' + err.message;
+  }
+}
+load();
+setInterval(load, 60000);
+</script>
+</body>
+</html>
