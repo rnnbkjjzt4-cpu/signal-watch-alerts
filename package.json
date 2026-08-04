@@ -1,0 +1,12 @@
+{
+  "name": "signal-watch-alerts",
+  "version": "1.0.0",
+  "description": "Free background disaster alert checker (NWS + optional FIRMS) with email/SMS delivery.",
+  "main": "scripts/check-alerts.js",
+  "scripts": {
+    "check": "node scripts/check-alerts.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
