@@ -1,29 +1,11 @@
 [
   {
-    "name": "Example: nationwide large-loss lead feed (sales use case)",
-    "method": "email",
-    "email": "castondown98@gmail.com
-",
+    "name": "Caston — nationwide large-loss alerts",
+    "method": "both",
+    "email": "castondown98@gmail.com",
+    "phone": "8175759660",
+    "carrier": "att",
     "nationwide": true,
     "hazards": ["tornado", "hurricane", "flood", "hail", "fire", "collapse", "stormdamage"]
-  },
-  {
-    "name": "Example: email only, weather only",
-    "method": "email",
-    "email": "you@company.com",
-    "watchLocation": "Washington",
-    "hazards": ["tornado", "hurricane", "flood", "hail"]
-  },
-  {
-    "name": "Example: email + text, weather + fire (needs FIRMS key + lat/lon)",
-    "method": "both",
-    "email": "you@company.com",
-    "phone": "5551234567",
-    "carrier": "verizon",
-    "watchLocation": "Anoka",
-    "hazards": ["tornado", "hurricane", "flood", "fire"],
-    "lat": 45.2,
-    "lon": -93.0,
-    "fireRadiusMiles": 25
   }
 ]
