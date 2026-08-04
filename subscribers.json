@@ -2,7 +2,8 @@
   {
     "name": "Example: nationwide large-loss lead feed (sales use case)",
     "method": "email",
-    "email": "you@company.com",
+    "email": "castondown98@gmail.com
+",
     "nationwide": true,
     "hazards": ["tornado", "hurricane", "flood", "hail", "fire", "collapse", "stormdamage"]
   },
