@@ -1,0 +1,36 @@
+name: Signal Watch — Alert Check
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - name: Run alert check
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+        run: node scripts/check-alerts.js
+
+      - name: Commit updated state
+        run: |
+          git config user.name "signal-watch-bot"
+          git config user.email "actions@github.com"
+          git add state/seen-alerts.json
+          git diff --cached --quiet || git commit -m "Update seen alerts"
+          git push
