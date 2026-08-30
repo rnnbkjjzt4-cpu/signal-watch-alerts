@@ -1,8 +1,4 @@
 [
-  "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d948722f6c1e4a526918e95d2f765dd85fb2ff3.001.1",
-  "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7857c1a0bedf4051bf932de530243a83698cf1e.001.1",
-  "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.992d823cde45a33384496ebfbf09af566150351e.001.1",
-  "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7c29abfad5f1200ed7969b3669ddac371b67f046.001.1",
   "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aae62c33f3a5191803b12461a57210aff26b5cf5.001.1",
   "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.561884a5a32c832b5f259180dd5564bdf7f25e2c.001.1",
   "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1a729419c6cca4295e937e0743c69a8cf96ec72b.001.1",
@@ -498,5 +494,9 @@
   "news_collapse_https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZnRmTW5vTWhtbnVrd2gtZXFFdXpPQTBwa2dfWHJLM1FMUk83WmdXWURQdTZ5M01WVUQyYmR0RTFnVnQ2cDdwQlV5UkVMWDlGX1gySjZJV0pVeDlFQ3o0SFJ0YkJaY0hFd29xVk44dHhfOF9tQUNzc1UxV3RJQ3hjb0xONEdGX01UaklZempQdTF1aWFrLUZpZlNpQkVWNjNpT3RpQTZWYlNXWFBaeEtqMndXZURjeWF3MXlqU0tDN1U5bjV0Q29aX2pIQzVTMHU3dkFBUQ?oc=5",
   "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d756f263e4f68832db044b604f236dffd89c11eb.001.1",
   "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a43560fddf6a3a82ffea67dc14c36f61179d0bd.003.1",
-  "news_collapse_https://news.google.com/rss/articles/CBMiakFVX3lxTFBaelVPN2w5eTVCRnplR2ttOXlMT2wzMng3bjlnQ0ZtZi1QWWxnR0VKVy1BSlQzV3VHeWhLSmxIRFpZYWQ1bnNMYi1FTlZaQUNIZmw5NlQ1azQzYm9POFFCNm5FWW1NU0k2SGc?oc=5"
+  "news_collapse_https://news.google.com/rss/articles/CBMiakFVX3lxTFBaelVPN2w5eTVCRnplR2ttOXlMT2wzMng3bjlnQ0ZtZi1QWWxnR0VKVy1BSlQzV3VHeWhLSmxIRFpZYWQ1bnNMYi1FTlZaQUNIZmw5NlQ1azQzYm9POFFCNm5FWW1NU0k2SGc?oc=5",
+  "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.835273dbd35bebaf3a98623162dc7ca3cdd51d27.001.1",
+  "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.20001a3c0dbbcd8cd638dd9b26a2b3430c36d80c.001.1",
+  "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a43560fddf6a3a82ffea67dc14c36f61179d0bd.001.1",
+  "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a43560fddf6a3a82ffea67dc14c36f61179d0bd.002.1"
 ]
